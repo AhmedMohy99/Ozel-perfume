@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" id="htmlroot">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Ozel - Luxury Perfumes</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">
+    <h1 id="brand-title">Ozel</h1>
+    <button id="lang-switch" class="btn" aria-label="Switch language">العربية</button>
+  </div>
+  <div class="search-area">
+    <input id="search-input" placeholder="Search perfumes..." />
+    <select id="category-filter">
+      <option value="all">All</option>
+      <option value="floral">Floral</option>
+      <option value="fresh">Fresh</option>
+      <option value="woody">Woody</option>
+      <option value="citrus">Citrus</option>
+      <option value="gourmand">Gourmand</option>
+      <option value="spicy">Spicy</option>
+    </select>
+    <a href="cart.html" class="btn cart-btn">Cart <span id="cart-count">0</span></a>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <div class="hero-text">
+      <h2 id="hero-title">Discover Your Signature Scent</h2>
+      <p id="hero-sub">Luxury fragrances crafted with the finest ingredients.</p>
+      <a href="#shop" class="btn primary" id="shop-now">Shop Now</a>
+    </div>
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1574169208507-84376144848b?auto=format&fit=crop&w=1200&q=80" alt="Perfume">
+    </div>
+  </section>
+
+  <section id="shop" class="shop-section">
+    <h3 id="shop-heading">Our Perfumes</h3>
+    <p id="shop-subheading">Browse our exquisite collection</p>
+
+    <div id="filters" class="filters">
+      <!-- Filter buttons are generated dynamically for full flexibility -->
+    </div>
+
+    <div id="product-grid" class="product-grid" aria-live="polite">
+      <!-- products injected by script.js -->
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p id="footer-text">© <span id="year"></span> Ozel — All rights reserved.</p>
+</footer>
+
+<script src="products.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
