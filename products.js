@@ -1,4 +1,4 @@
-/* products.js
+products.js
 This file holds the product catalog for the Ozel Perfume Shop. It defines all perfumes as a JavaScript array.
 Each product is an object with these fields:
 - id: Unique integer (increment for new items; used for cart/wishlist).
@@ -35,7 +35,6 @@ Example new product (add to Spicy):
   rating: 4.6,
   stock: 40
 }
-*/
 
 const products = [
   // Woody Category (10 items - deep, sophisticated scents; premium wood/amber/oud themes)
